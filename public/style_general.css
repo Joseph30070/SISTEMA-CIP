@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body.login-body {
+  background: linear-gradient(135deg, #196ba6,#0d2501be);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+}
+
+/*Contenedor principal*/
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.login-box {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgb(26, 38, 27);
+  padding: 40px 30px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.logo-container h2 {
+  font-size: 22px;
+  color: #003366;
+  font-weight: 700;
+}
+
+/* === Entradas === */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #004e92;
+  box-shadow: 0 0 5px rgba(0,78,146,0.4);
+  outline: none;
+}
+
+/* === Botón === */
+.btn-login {
+  width: 100%;
+  background: linear-gradient(135deg, #004e92, #0072ff);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #005ec2, #0080ff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* === Mensaje de error === */
+.error-msg {
+  background: #ffe6e6;
+  color: #b30000;
+  border: 1px solid #ff9999;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* === Enlace de registro === */
+.register-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.register-link {
+  color: #0072ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/* === Pie === */
+.footer-text {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #888;
+}
+
+/* === Responsivo === */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+  .btn-login {
+    font-size: 15px;
+  }
+}
+

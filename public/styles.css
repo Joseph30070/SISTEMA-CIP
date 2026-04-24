@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+    background: #f6f7fb;
+    color: #1f2937
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
+    padding: 24px
+}
+
+h1 {
+    margin-top: 0
+}
+
+label {
+    display: block;
+    margin: .5rem 0 .25rem;
+    font-weight: 600
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px
+}
+
+.row {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(12, 1fr)
+}
+
+.col-6 {
+    grid-column: span 6
+}
+
+.col-4 {
+    grid-column: span 4
+}
+
+.col-3 {
+    grid-column: span 3
+}
+
+.col-12 {
+    grid-column: span 12
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.btn {
+    background: #111827;
+    color: #fff
+}
+
+.btn.sec {
+    background: #e5e7eb;
+    color: #111827
+}
+
+.step {
+    display: none
+}
+
+.step.active {
+    display: block
+}
+
+.progress {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 8px 0 24px
+}
+
+.progress>div {
+    height: 100%;
+    background: #111827;
+    width: 0%;
+    transition: width .3s ease
+}
+
+.helper {
+    font-size: .85rem;
+    color: #6b7280
+}
+
+.err {
+    color: #b91c1c;
+    font-weight: 600;
+    font-size: .9rem;
+    margin: .25rem 0
+}
